@@ -1,0 +1,1521 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+ul {
+  list-style: none;
+}
+body {
+  background-image: linear-gradient(#ccd8ff, #7d8eff);
+  background-repeat: no-repeat;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+@media (max-width: 767px) {
+  /*visual*/
+  #visual {
+    width: 100%;
+    height: 100vh;
+  }
+  #visual ul {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    margin: 50px auto;
+  }
+  #visual ul li div {
+    /* border: 1px solid red; */
+    width: 70%;
+    height: 100px;
+    opacity: 0.5;
+    animation: cloud 1.5s ease infinite;
+  }
+  @keyframes cloud {
+    0% {
+      transform: translateY(0%);
+    }
+    50% {
+      transform: translateY(-8%);
+    }
+    100% {
+      transform: translateY(0%);
+    }
+  }
+  #visual ul li div img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    position: relative;
+  }
+  #visual .portfolio {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 70%;
+    margin: 50px auto;
+    height: 50%;
+    border-radius: 100px 0px 100px 0px;
+    color: #7d8eff;
+    text-align: center;
+    transform: scale(0);
+  }
+  #visual .portfolio h2 {
+    font-size: 4.5rem;
+    font-weight: 540;
+    letter-spacing: 10px;
+    margin-bottom: 10px;
+    padding-top: 50px;
+  }
+  #visual .portfolio p {
+    font-size: 12px;
+    font-weight: 550;
+  }
+  #visual .mainme {
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translateX(-50%);
+    /* border: 1px solid red; */
+    width: 60%;
+    height: 500px;
+    transform: scale(0);
+  }
+  #visual .mainme img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  /*container*/
+  /*container1
+  self*/
+  #container .self {
+    background-color: #fff;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    color: #6479ff;
+    position: relative;
+  }
+  #container .self .bluecloud {
+    width: 20%;
+    height: 100px;
+    opacity: 0.5;
+    margin: 10px;
+    animation: cloud 1.5s ease infinite;
+  }
+  #container .self .bluecloud img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  #container .self .profile {
+    /* border: 1px solid red; */
+    width: 50%;
+    position: relative;
+  }
+  #container .self .profile .me {
+    /* border: 1px solid red; */
+    width: 60%;
+    height: 300px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #container .self .profile .me img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  #container .self .profile .line1 {
+    background-color: #5d72ff;
+    width: 80%;
+    height: 3px;
+    position: absolute;
+    top: 50%;
+  }
+  #container .self .profile .work {
+    position: absolute;
+    bottom: 10%;
+    left: 20%;
+    transform: translateX(-20%);
+  }
+  #container .self .profile .work div {
+    margin: 15px 0px;
+  }
+  #container .self .profile .work div h3 {
+    color: #9eb2f6;
+    font-size: 1.3rem;
+  }
+  #container .self .profile .work div p {
+    font-weight: 540;
+  }
+  #container .self .profile .bluecloud2 {
+    position: absolute;
+    bottom: 0px;
+    right: 50px;
+  }
+  #container .self .profile .line2 {
+    background-color: #5d72ff;
+    height: 200px;
+    width: 3px;
+    position: absolute;
+    bottom: 0px;
+    right: 30px;
+  }
+  #container .self .skil {
+    /* border: 1px solid red; */
+    width: 50%;
+    position: relative;
+  }
+  #container .self .skil .name {
+    position: absolute;
+    top: 9.5%;
+    left: 18%;
+    z-index: 2;
+  }
+  #container .self .skil .name h2 {
+    font-size: 1.5rem;
+  }
+  #container .self .skil .name span {
+    color: #9eb2f6;
+  }
+  #container .self .skil .information {
+    background-color: rgba(204, 216, 255, 0.5);
+    width: 70%;
+    height: 200px;
+    border-radius: 20px 0px 20px 0px;
+    position: absolute;
+    top: 13%;
+    left: 50%;
+    transform: translateX(-50%);
+    /* font-size: 1.3rem; */
+    text-align: center;
+  }
+  #container .self .skil .information p {
+    margin-top: 50px;
+  }
+  #container .self .skil .information span {
+    color: #9eb2f6;
+  }
+  #container .self .skil .gisul {
+    position: absolute;
+    top: 40%;
+    left: 10px;
+    font-size: 1.3rem;
+  }
+  #container .self .skil .allul {
+    position: absolute;
+    width: 60%;
+    bottom: 25%;
+    left: 10%;
+  }
+  #container .self .skil ul {
+    display: flex;
+    gap: 10px;
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 80px;
+    margin: 10px 0px 0px;
+  }
+  #container .self .skil .trul {
+    width: 60%;
+  }
+  #container .self .skil ul li {
+    background-color: rgba(93, 114, 255, 0.5);
+    color: #fff;
+    width: calc(100% / 3);
+    text-align: center;
+    line-height: 80px;
+    border-radius: 50%;
+  }
+  #container .self .skil .trul li {
+    width: calc(100% / 2);
+  }
+  #container .self .skil .mainme {
+    /* border: 1px solid red; */
+    width: 45%;
+    height: 350px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+  }
+  #container .self .skil .mainme img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  #container .self .leftwhitebox {
+    width: 50%;
+    height: 100vh;
+    background-color: #fff;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+  }
+  #container .self .rightwhitebox {
+    width: 50%;
+    height: 100vh;
+    background-color: #fff;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: 3;
+  }
+  /*container2
+  coding*/
+  .coding {
+    background-image: url(../img/홈페이지\ 소개\ 배경.png);
+    /* background-repeat: no-repeat repeat; */
+    background-size: cover;
+    width: 100%;
+    color: #4459e5;
+    position: relative;
+  }
+  .coding .clinic {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 80%;
+    height: 500px;
+    margin: 100px auto;
+    border-radius: 50px 0px 50px 0px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: sticky;
+    top: 0px;
+  }
+  .coding .intro {
+    width: 40%;
+    height: 500px;
+    display: flex;
+  }
+  .coding .intro img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .coding .desc {
+    width: 40%;
+  }
+  .coding .desc h2 {
+    font-size: 1.3rem;
+    margin-bottom: 50px;
+  }
+  .coding .desc p {
+    letter-spacing: 1.5px;
+    font-size: 10px;
+  }
+  .coding .trip {
+    display: flex;
+    background-color: rgba(255, 255, 255);
+    width: 80%;
+    height: 500px;
+    margin: 50px auto;
+    border-radius: 50px 0px 50px 0px;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    justify-content: center;
+    gap: 10px;
+  }
+  .coding .jpuppet {
+    display: flex;
+    background-color: #e5ebff;
+    width: 80%;
+    height: 500px;
+    margin: 50px auto;
+    border-radius: 50px 0px 50px 0px;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    justify-content: center;
+    gap: 10px;
+  }
+  .coding a {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+  }
+  .coding .cloud1 {
+    width: 10%;
+    height: 100px;
+    position: absolute;
+    top: 0px;
+    opacity: 0.5;
+    animation: cloud 1.5s ease infinite;
+  }
+
+  .coding .cloud1 img {
+    width: 100%;
+    height: 100px;
+    object-fit: contain;
+  }
+  .coding .cloud2 {
+    width: 10%;
+    height: 100px;
+    position: absolute;
+    top: 20%;
+    right: 0px;
+    opacity: 0.5;
+    animation: cloud 1.5s ease infinite;
+  }
+  .coding .cloud2 img {
+    width: 100%;
+    height: 100px;
+    object-fit: contain;
+  }
+  .coding .cloud3 {
+    width: 10%;
+    height: 100px;
+    position: absolute;
+    top: 0px;
+    opacity: 0.5;
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    opacity: 0.5;
+    animation: cloud 1.5s ease infinite;
+  }
+
+  .coding .cloud3 img {
+    width: 100%;
+    height: 100px;
+    object-fit: contain;
+  }
+  .coding .cloud4 {
+    width: 10%;
+    height: 100px;
+    position: absolute;
+    top: 70%;
+    right: 0px;
+    opacity: 0.5;
+    animation: cloud 1.5s ease infinite;
+  }
+  .coding .cloud4 img {
+    width: 100%;
+    height: 100px;
+    object-fit: contain;
+  }
+  /*container3
+  ai*/
+  .ai {
+    background-image: url(../img/일러스트카드쌓기배경.png);
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    /* opacity: 0; */
+  }
+  .ai h2 {
+    font-size: 1.7rem;
+    background-color: #7d8eff;
+    width: 25%;
+    text-align: center;
+    color: #fff;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 50px;
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    z-index: 2;
+  }
+  .ai .aiimg div {
+    width: 50%;
+    height: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: none;
+    /* opacity: 0; */
+    /* transform: translate(-50%, -50%); */
+  }
+  .ai .aiimg .aiimg1 {
+    transform: translateX(-50%) rotate(12deg);
+  }
+  .ai .aiimg .aiimg2 {
+    transform: translateX(-50%) rotate(-12deg);
+  }
+  .ai .aiimg .aiimg3 {
+    transform: translateX(-50%) rotate(5deg);
+  }
+  .ai .aiimg .aiimg4 {
+    transform: translateX(-50%) rotate(-5deg);
+  }
+  .ai .aiimg .aiimg5 {
+    transform: translateX(-50%) rotate(10deg);
+  }
+  .ai .aiimg .aiimg6 {
+    transform: translateX(-50%) rotate(-10deg);
+  }
+  .ai .aiimg div img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .ai .cloud div {
+    width: 20%;
+    height: 100px;
+    opacity: 0.5;
+    animation: cloud 1.5s ease infinite;
+  }
+  .ai .cloud .cloud1 {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+  }
+  .ai .cloud .cloud2 {
+    position: absolute;
+    top: 23%;
+    right: 5%;
+  }
+  .ai .cloud .cloud3 {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+  }
+  .ai .cloud .cloud4 {
+    position: absolute;
+    top: 65%;
+    right: 5%;
+  }
+  .ai .cloud .cloud5 {
+    position: absolute;
+    top: 85%;
+    left: 5%;
+  }
+  .ai .cloud .cloud6 {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+  }
+  .ai .cloud div img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  /*visual*/
+  #visual {
+    width: 100%;
+    height: 100vh;
+  }
+  #visual ul {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    margin: 50px auto;
+  }
+  #visual ul li div {
+    /* border: 1px solid red; */
+    width: 70%;
+    height: 100px;
+    opacity: 0.5;
+    animation: cloud 1.5s ease infinite;
+  }
+  @keyframes cloud {
+    0% {
+      transform: translateY(0%);
+    }
+    50% {
+      transform: translateY(-8%);
+    }
+    100% {
+      transform: translateY(0%);
+    }
+  }
+  #visual ul li div img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    position: relative;
+  }
+  #visual .portfolio {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 70%;
+    margin: 50px auto;
+    height: 50%;
+    border-radius: 100px 0px 100px 0px;
+    color: #7d8eff;
+    text-align: center;
+    transform: scale(0);
+  }
+  #visual .portfolio h2 {
+    font-size: 7rem;
+    font-weight: 540;
+    letter-spacing: 10px;
+    margin-bottom: 10px;
+    padding-top: 20px;
+  }
+  #visual .portfolio p {
+    /* font-size: 20px; */
+    font-weight: 550;
+  }
+  #visual .mainme {
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translateX(-50%);
+    /* border: 1px solid red; */
+    width: 50%;
+    height: 500px;
+    transform: scale(0);
+  }
+  #visual .mainme img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  /*container*/
+  /*container1
+  self*/
+  #container .self {
+    background-color: #fff;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    color: #6479ff;
+    position: relative;
+  }
+  #container .self .bluecloud {
+    width: 20%;
+    height: 100px;
+    opacity: 0.5;
+    margin: 10px;
+    animation: cloud 1.5s ease infinite;
+  }
+  #container .self .bluecloud img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  #container .self .profile {
+    /* border: 1px solid red; */
+    width: 50%;
+    position: relative;
+  }
+  #container .self .profile .me {
+    /* border: 1px solid red; */
+    width: 60%;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #container .self .profile .me img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  #container .self .profile .line1 {
+    background-color: #5d72ff;
+    width: 80%;
+    height: 3px;
+    position: absolute;
+    top: 60%;
+  }
+  #container .self .profile .work {
+    position: absolute;
+    bottom: 3%;
+    left: 20%;
+    transform: translateX(-20%);
+  }
+  #container .self .profile .work div {
+    margin: 15px 0px;
+  }
+  #container .self .profile .work div h3 {
+    color: #9eb2f6;
+    font-size: 1.3rem;
+  }
+  #container .self .profile .work div p {
+    font-weight: 540;
+  }
+  #container .self .profile .bluecloud2 {
+    position: absolute;
+    bottom: 0px;
+    right: 50px;
+  }
+  #container .self .profile .line2 {
+    background-color: #5d72ff;
+    height: 200px;
+    width: 3px;
+    position: absolute;
+    bottom: 0px;
+    right: 30px;
+  }
+  #container .self .skil {
+    /* border: 1px solid red; */
+    width: 50%;
+    position: relative;
+  }
+  #container .self .skil .name {
+    position: absolute;
+    top: 8%;
+    left: 15%;
+    z-index: 2;
+  }
+  #container .self .skil .name h2 {
+    font-size: 2rem;
+  }
+  #container .self .skil .name span {
+    color: #9eb2f6;
+  }
+  #container .self .skil .information {
+    background-color: rgba(204, 216, 255, 0.5);
+    width: 70%;
+    height: 200px;
+    border-radius: 20px 0px 20px 0px;
+    position: absolute;
+    top: 13%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  #container .self .skil .information p {
+    margin-top: 50px;
+  }
+  #container .self .skil .information span {
+    color: #9eb2f6;
+  }
+  #container .self .skil .gisul {
+    position: absolute;
+    top: 40%;
+    left: 10px;
+    font-size: 1.3rem;
+  }
+  #container .self .skil .allul {
+    position: absolute;
+    width: 60%;
+    bottom: 20%;
+    left: 10%;
+  }
+  #container .self .skil ul {
+    display: flex;
+    gap: 10px;
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 100px;
+    margin: 10px 0px 0px;
+  }
+  #container .self .skil .trul {
+    width: 60%;
+  }
+  #container .self .skil ul li {
+    background-color: rgba(93, 114, 255, 0.5);
+    color: #fff;
+    width: calc(100% / 3);
+    text-align: center;
+    line-height: 100px;
+    border-radius: 50%;
+  }
+  #container .self .skil .trul li {
+    width: calc(100% / 2);
+  }
+  #container .self .skil .mainme {
+    /* border: 1px solid red; */
+    width: 30%;
+    height: 350px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+  }
+  #container .self .skil .mainme img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  #container .self .leftwhitebox {
+    width: 50%;
+    height: 100vh;
+    background-color: #fff;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+  }
+  #container .self .rightwhitebox {
+    width: 50%;
+    height: 100vh;
+    background-color: #fff;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: 3;
+  }
+  /*container2
+  coding*/
+  .coding {
+    background-image: url(../img/홈페이지\ 소개\ 배경.png);
+    /* background-repeat: no-repeat repeat; */
+    background-size: cover;
+    width: 100%;
+    color: #4459e5;
+    position: relative;
+  }
+  .coding .clinic {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 80%;
+    height: 600px;
+    margin: 100px auto;
+    border-radius: 50px 0px 50px 0px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: sticky;
+    top: 0px;
+  }
+  .coding .intro {
+    width: 40%;
+    height: 500px;
+    display: flex;
+  }
+  .coding .intro img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .coding .desc {
+    width: 40%;
+  }
+  .coding .desc h2 {
+    font-size: 1.5rem;
+    margin-bottom: 50px;
+  }
+  .coding .desc p {
+    letter-spacing: 1.5px;
+    font-size: 13px;
+  }
+  .coding .trip {
+    display: flex;
+    background-color: rgba(255, 255, 255);
+    width: 80%;
+    height: 700px;
+    margin: 50px auto;
+    border-radius: 50px 0px 50px 0px;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    justify-content: center;
+    gap: 10px;
+  }
+  .coding .jpuppet {
+    display: flex;
+    background-color: #e5ebff;
+    width: 80%;
+    height: 700px;
+    margin: 50px auto;
+    border-radius: 50px 0px 50px 0px;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    justify-content: center;
+    gap: 10px;
+  }
+  .coding a {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+  }
+  .coding .cloud1 {
+    width: 10%;
+    height: 100px;
+    position: absolute;
+    top: 0px;
+    opacity: 0.5;
+    animation: cloud 1.5s ease infinite;
+  }
+
+  .coding .cloud1 img {
+    width: 100%;
+    height: 100px;
+    object-fit: contain;
+  }
+  .coding .cloud2 {
+    width: 10%;
+    height: 100px;
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    opacity: 0.5;
+    animation: cloud 1.5s ease infinite;
+  }
+  .coding .cloud2 img {
+    width: 100%;
+    height: 100px;
+    object-fit: contain;
+  }
+  .coding .cloud3 {
+    width: 10%;
+    height: 100px;
+    position: absolute;
+    top: 0px;
+    opacity: 0.5;
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    opacity: 0.5;
+    animation: cloud 1.5s ease infinite;
+  }
+
+  .coding .cloud3 img {
+    width: 100%;
+    height: 100px;
+    object-fit: contain;
+  }
+  .coding .cloud4 {
+    width: 10%;
+    height: 100px;
+    position: absolute;
+    top: 70%;
+    right: 0px;
+    opacity: 0.5;
+    animation: cloud 1.5s ease infinite;
+  }
+  .coding .cloud4 img {
+    width: 100%;
+    height: 100px;
+    object-fit: contain;
+  }
+  /*container3
+  ai*/
+  .ai {
+    background-image: url(../img/일러스트카드쌓기배경.png);
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+  .ai h2 {
+    font-size: 1.7rem;
+    background-color: #7d8eff;
+    width: 20%;
+    text-align: center;
+    color: #fff;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 50px;
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    z-index: 2;
+  }
+  .ai .aiimg div {
+    width: 45%;
+    height: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: none;
+    /* opacity: 0; */
+    /* transform: translate(-50%, -50%); */
+  }
+  .ai .aiimg .aiimg1 {
+    transform: translateX(-50%) rotate(12deg);
+  }
+  .ai .aiimg .aiimg2 {
+    transform: translateX(-50%) rotate(-12deg);
+  }
+  .ai .aiimg .aiimg3 {
+    transform: translateX(-50%) rotate(5deg);
+  }
+  .ai .aiimg .aiimg4 {
+    transform: translateX(-50%) rotate(-5deg);
+  }
+  .ai .aiimg .aiimg5 {
+    transform: translateX(-50%) rotate(10deg);
+  }
+  .ai .aiimg .aiimg6 {
+    transform: translateX(-50%) rotate(-10deg);
+  }
+  .ai .aiimg div img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .ai .cloud div {
+    width: 17%;
+    height: 100px;
+    opacity: 0.5;
+    animation: cloud 1.5s ease infinite;
+  }
+  .ai .cloud .cloud1 {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+  }
+  .ai .cloud .cloud2 {
+    position: absolute;
+    top: 23%;
+    right: 10%;
+  }
+  .ai .cloud .cloud3 {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+  }
+  .ai .cloud .cloud4 {
+    position: absolute;
+    top: 65%;
+    right: 5%;
+  }
+  .ai .cloud .cloud5 {
+    position: absolute;
+    top: 85%;
+    left: 5%;
+  }
+  .ai .cloud .cloud6 {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+  }
+  .ai .cloud div img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+@media (min-width: 1024px) {
+  /*visual*/
+  #visual {
+    width: 100%;
+    height: 100vh;
+  }
+  #visual ul {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    margin: 50px auto;
+  }
+  #visual ul li div {
+    /* border: 1px solid red; */
+    width: 120px;
+    height: 100px;
+    opacity: 0.5;
+    animation: cloud 1.5s ease infinite;
+  }
+  @keyframes cloud {
+    0% {
+      transform: translateY(0%);
+    }
+    50% {
+      transform: translateY(-10%);
+    }
+    100% {
+      transform: translateY(0%);
+    }
+  }
+  #visual ul li div img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    position: relative;
+  }
+  #visual .portfolio {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 70%;
+    margin: 50px auto;
+    height: 60%;
+    border-radius: 100px 0px 100px 0px;
+    color: #7d8eff;
+    text-align: center;
+    transform: scale(0);
+  }
+  #visual .portfolio h2 {
+    font-size: 12rem;
+    font-weight: 540;
+    letter-spacing: 30px;
+    margin-bottom: 10px;
+    padding-top: 20px;
+  }
+  #visual .portfolio p {
+    font-size: 20px;
+    font-weight: 550;
+  }
+  #visual .mainme {
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translateX(-50%);
+    /* border: 1px solid red; */
+    width: 500px;
+    height: 500px;
+    transform: scale(0);
+  }
+  #visual .mainme img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  /*container*/
+  /*container1
+  self*/
+  #container .self {
+    background-color: #fff;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    color: #6479ff;
+    position: relative;
+  }
+  #container .self .bluecloud {
+    width: 100px;
+    height: 100px;
+    opacity: 0.5;
+    margin: 10px;
+    animation: cloud 1.5s ease infinite;
+  }
+  #container .self .bluecloud img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  #container .self .profile {
+    /* border: 1px solid red; */
+    width: 50%;
+    position: relative;
+  }
+  #container .self .profile .me {
+    /* border: 1px solid red; */
+    width: 400px;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #container .self .profile .me img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  #container .self .profile .line1 {
+    background-color: #5d72ff;
+    width: 800px;
+    height: 3px;
+    position: absolute;
+    top: 70%;
+  }
+  #container .self .profile .work {
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #container .self .profile .work div {
+    margin: 15px 0px;
+  }
+  #container .self .profile .work div h3 {
+    color: #9eb2f6;
+    font-size: 1.3rem;
+  }
+  #container .self .profile .work div p {
+    font-weight: 540;
+  }
+  #container .self .profile .bluecloud2 {
+    position: absolute;
+    bottom: 0px;
+    right: 50px;
+  }
+  #container .self .profile .line2 {
+    background-color: #5d72ff;
+    height: 200px;
+    width: 3px;
+    position: absolute;
+    bottom: 0px;
+    right: 30px;
+  }
+  #container .self .skil {
+    /* border: 1px solid red; */
+    width: 50%;
+    position: relative;
+  }
+  #container .self .skil .name {
+    position: absolute;
+    top: 50px;
+    left: 15%;
+    z-index: 2;
+  }
+  #container .self .skil .name h2 {
+    font-size: 3rem;
+  }
+  #container .self .skil .name span {
+    color: #9eb2f6;
+  }
+  #container .self .skil .information {
+    background-color: rgba(204, 216, 255, 0.5);
+    width: 70%;
+    height: 200px;
+    border-radius: 20px 0px 20px 0px;
+    position: absolute;
+    top: 13%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.7rem;
+    text-align: center;
+  }
+  #container .self .skil .information p {
+    margin-top: 40px;
+  }
+  #container .self .skil .information span {
+    color: #9eb2f6;
+  }
+  #container .self .skil .gisul {
+    position: absolute;
+    top: 40%;
+    left: 10px;
+    font-size: 1.3rem;
+  }
+  #container .self .skil .allul {
+    position: absolute;
+    width: 60%;
+    bottom: 10px;
+    left: 10%;
+  }
+  #container .self .skil ul {
+    display: flex;
+    gap: 50px;
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 150px;
+    margin: 50px 0px 0px;
+  }
+  #container .self .skil .trul {
+    width: 60%;
+  }
+  #container .self .skil ul li {
+    background-color: rgba(93, 114, 255, 0.5);
+    color: #fff;
+    width: calc(100% / 3);
+    text-align: center;
+    line-height: 150px;
+    border-radius: 50%;
+  }
+  #container .self .skil .trul li {
+    width: calc(100% / 2);
+  }
+  #container .self .skil .mainme {
+    /* border: 1px solid red; */
+    width: 29%;
+    height: 500px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+  }
+  #container .self .skil .mainme img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  #container .self .leftwhitebox {
+    width: 50%;
+    height: 100vh;
+    background-color: #fff;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+  }
+  #container .self .rightwhitebox {
+    width: 50%;
+    height: 100vh;
+    background-color: #fff;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: 3;
+  }
+  /*container2
+  coding*/
+  .coding {
+    background-image: url(../img/홈페이지\ 소개\ 배경.png);
+    /* background-repeat: no-repeat repeat; */
+    background-size: cover;
+    width: 100%;
+    color: #4459e5;
+    position: relative;
+  }
+  .coding .clinic {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 70%;
+    height: 700px;
+    margin: 100px auto;
+    border-radius: 50px 0px 50px 0px;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+  }
+  .coding .intro {
+    width: 45%;
+    height: 400px;
+    display: flex;
+  }
+  .coding .intro img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .coding .desc {
+    width: 45%;
+  }
+  .coding .desc h2 {
+    font-size: 2rem;
+    margin-bottom: 50px;
+  }
+  .coding .desc p {
+    letter-spacing: 1.5px;
+  }
+  .coding .trip {
+    display: flex;
+    background-color: rgba(255, 255, 255);
+    width: 70%;
+    height: 700px;
+    margin: 50px auto;
+    border-radius: 50px 0px 50px 0px;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+  }
+  .coding .jpuppet {
+    display: flex;
+    background-color: #e5ebff;
+    width: 70%;
+    height: 700px;
+    margin: 50px auto;
+    border-radius: 50px 0px 50px 0px;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+  }
+  .coding a {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+  }
+  .coding .cloud1 {
+    width: 10%;
+    height: 100px;
+    position: absolute;
+    top: 0px;
+    opacity: 0.5;
+    animation: cloud 1.5s ease infinite;
+  }
+
+  .coding .cloud1 img {
+    width: 100%;
+    height: 100px;
+    object-fit: contain;
+  }
+  .coding .cloud2 {
+    width: 10%;
+    height: 100px;
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    opacity: 0.5;
+    animation: cloud 1.5s ease infinite;
+  }
+  .coding .cloud2 img {
+    width: 100%;
+    height: 100px;
+    object-fit: contain;
+  }
+  .coding .cloud3 {
+    width: 10%;
+    height: 100px;
+    position: absolute;
+    top: 0px;
+    opacity: 0.5;
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    opacity: 0.5;
+    animation: cloud 1.5s ease infinite;
+  }
+
+  .coding .cloud3 img {
+    width: 100%;
+    height: 100px;
+    object-fit: contain;
+  }
+  .coding .cloud4 {
+    width: 10%;
+    height: 100px;
+    position: absolute;
+    top: 70%;
+    right: 10%;
+    opacity: 0.5;
+    animation: cloud 1.5s ease infinite;
+  }
+  .coding .cloud4 img {
+    width: 100%;
+    height: 100px;
+    object-fit: contain;
+  }
+  /*container3
+  ai*/
+  .ai {
+    background-image: url(../img/일러스트카드쌓기배경.png);
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+  .ai h2 {
+    font-size: 1.7rem;
+    background-color: #7d8eff;
+    width: 200px;
+    text-align: center;
+    color: #fff;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 50px;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+  }
+  .ai .aiimg div {
+    width: 350px;
+    height: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: none;
+    /* opacity: 0; */
+    /* transform: translate(-50%, -50%); */
+  }
+  .ai .aiimg .aiimg1 {
+    transform: translateX(-50%) rotate(12deg);
+  }
+  .ai .aiimg .aiimg2 {
+    transform: translateX(-50%) rotate(-12deg);
+  }
+  .ai .aiimg .aiimg3 {
+    transform: translateX(-50%) rotate(5deg);
+  }
+  .ai .aiimg .aiimg4 {
+    transform: translateX(-50%) rotate(-5deg);
+  }
+  .ai .aiimg .aiimg5 {
+    transform: translateX(-50%) rotate(10deg);
+  }
+  .ai .aiimg .aiimg6 {
+    transform: translateX(-50%) rotate(-10deg);
+  }
+  .ai .aiimg div img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .ai .cloud div {
+    width: 150px;
+    height: 100px;
+    opacity: 0.5;
+    animation: cloud 1.5s ease infinite;
+  }
+  .ai .cloud .cloud1 {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+  }
+  .ai .cloud .cloud2 {
+    position: absolute;
+    top: 23%;
+    right: 20%;
+  }
+  .ai .cloud .cloud3 {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+  }
+  .ai .cloud .cloud4 {
+    position: absolute;
+    top: 65%;
+    right: 15%;
+  }
+  .ai .cloud .cloud5 {
+    position: absolute;
+    top: 85%;
+    left: 5%;
+  }
+  .ai .cloud .cloud6 {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+  }
+  .ai .cloud div img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  /*container4
+  aiall*/
+  .aiall {
+    background-color: #fff;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+  .cloud1 {
+    width: 150px;
+    height: 150px;
+    margin-left: 10px;
+  }
+  .cloud1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .cloud2 {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+  }
+  .cloud2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .upai {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    margin: 0px auto;
+  }
+  .upai li {
+    width: 300px;
+    height: 400px;
+    transition: 1s;
+  }
+  .upai li img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .downai {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    margin: 50px auto;
+  }
+  .downai li {
+    width: 300px;
+    height: 400px;
+    transition: 1s;
+  }
+  .downai li img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
