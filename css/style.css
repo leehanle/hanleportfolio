@@ -224,12 +224,15 @@ body {
     width: 60%;
   }
   #container .self .skil ul li {
-    background-color: rgba(93, 114, 255, 0.5);
     color: #fff;
     width: calc(100% / 3);
     text-align: center;
     line-height: 80px;
     border-radius: 50%;
+  }
+  #container .self .skil ul li img {
+    width: 100%;
+    height: 100%;
   }
   #container .self .skil .trul li {
     width: calc(100% / 2);
@@ -770,11 +773,14 @@ body {
     height: 100px;
     margin: 10px 0px 0px;
   }
+  #container .self .skil ul li img {
+    width: 100%;
+    height: 100%;
+  }
   #container .self .skil .trul {
     width: 60%;
   }
   #container .self .skil ul li {
-    background-color: rgba(93, 114, 255, 0.5);
     color: #fff;
     width: calc(100% / 3);
     text-align: center;
@@ -1230,10 +1236,10 @@ body {
   }
   #container .self .profile .line1 {
     background-color: #5d72ff;
-    width: 800px;
+    width: 1000px;
     height: 3px;
     position: absolute;
-    top: 70%;
+    top: 60%;
   }
   #container .self .profile .work {
     position: absolute;
@@ -1242,14 +1248,15 @@ body {
     transform: translateX(-50%);
   }
   #container .self .profile .work div {
-    margin: 15px 0px;
+    margin: 30px 0px;
   }
   #container .self .profile .work div h3 {
     color: #9eb2f6;
-    font-size: 1.3rem;
+    font-size: 2rem;
   }
   #container .self .profile .work div p {
     font-weight: 540;
+    font-size: 1.3rem;
   }
   #container .self .profile .bluecloud2 {
     position: absolute;
@@ -1258,7 +1265,7 @@ body {
   }
   #container .self .profile .line2 {
     background-color: #5d72ff;
-    height: 200px;
+    height: 300px;
     width: 3px;
     position: absolute;
     bottom: 0px;
@@ -1271,8 +1278,8 @@ body {
   }
   #container .self .skil .name {
     position: absolute;
-    top: 50px;
-    left: 15%;
+    top: 97px;
+    left: 16%;
     z-index: 2;
   }
   #container .self .skil .name h2 {
@@ -1303,7 +1310,7 @@ body {
     position: absolute;
     top: 40%;
     left: 10px;
-    font-size: 1.3rem;
+    font-size: 1.7rem;
   }
   #container .self .skil .allul {
     position: absolute;
@@ -1323,12 +1330,16 @@ body {
     width: 60%;
   }
   #container .self .skil ul li {
-    background-color: rgba(93, 114, 255, 0.5);
     color: #fff;
     width: calc(100% / 3);
     text-align: center;
     line-height: 150px;
     border-radius: 50%;
+  }
+  #container .self .skil ul li img {
+    width: 100%;
+    height: 100%;
+    /* object-fit: contain; */
   }
   #container .self .skil .trul li {
     width: calc(100% / 2);
@@ -1403,6 +1414,7 @@ body {
   }
   .coding .desc p {
     letter-spacing: 1.5px;
+    font-size: 1.2rem;
   }
   .coding .trip {
     display: flex;

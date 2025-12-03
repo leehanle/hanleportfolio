@@ -7,12 +7,7 @@ $(function () {
     $(".self .leftwhitebox").stop().animate({ left: "0%" }, 1500);
     $(".self .rightwhitebox").stop().animate({ right: "0%" }, 1500);
   });
-  $(".self .skil ul li").on("mouseenter", function () {
-    $(this).css({ "background-color": "rgba(93, 114, 255, 1)" });
-  });
-  $(".self .skil ul li").on("mouseleave", function () {
-    $(this).css({ "background-color": "rgba(93, 114, 255, 0.5)" });
-  });
+
   $(".upai li").on("mouseenter", function () {
     $(".downai li").css({ transform: "scale(0.7)", opacity: "0.5" });
     $(".upai li").css({ transform: "scale(0.7)", opacity: "0.5" });
