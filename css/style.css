@@ -301,15 +301,37 @@ body {
     object-fit: contain;
   }
   .coding .desc {
-    width: 40%;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70%;
+    text-align: center;
   }
   .coding .desc h2 {
-    font-size: 1.3rem;
-    margin-bottom: 50px;
+    font-size: 1.5rem;
+    margin: 50px 0px;
+    color: #374182;
   }
   .coding .desc p {
-    letter-spacing: 1.5px;
-    font-size: 10px;
+    font-size: 13px;
+    color: #000;
+  }
+  .coding .desc .downtext p {
+    margin: 10px 0px;
+    text-align: right;
+    /* font-size: 1.1rem; */
+  }
+  .coding .desc .downtext .under {
+    text-decoration: underline;
+  }
+  .coding .desc .downtext .back {
+    background-color: #ccd8ff;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 10px;
+    margin: 0px auto;
   }
   .coding .trip {
     display: flex;
@@ -854,15 +876,40 @@ body {
     object-fit: contain;
   }
   .coding .desc {
-    width: 40%;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70%;
+    text-align: center;
   }
   .coding .desc h2 {
-    font-size: 1.5rem;
-    margin-bottom: 50px;
+    font-size: 1.7rem;
+    margin: 50px 0px;
+    color: #374182;
   }
   .coding .desc p {
-    letter-spacing: 1.5px;
-    font-size: 13px;
+    /* font-size: 1.2rem; */
+    color: #000;
+  }
+  .coding .desc .downtext p {
+    margin: 10px 0px;
+    text-align: right;
+    /* font-size: 1.1rem; */
+  }
+  .coding .desc .downtext .back {
+    background-color: #ccd8ff;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 10px;
+    margin: 0px auto;
+  }
+  .coding .desc .downtext .under {
+    text-decoration: underline;
+  }
+  .coding .desc a {
+    display: block;
   }
   .coding .trip {
     display: flex;
@@ -1407,14 +1454,39 @@ body {
   }
   .coding .desc {
     width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70%;
+    text-align: center;
   }
   .coding .desc h2 {
-    font-size: 2rem;
-    margin-bottom: 50px;
+    font-size: 1.7rem;
+    margin: 50px 0px;
+    color: #374182;
   }
   .coding .desc p {
-    letter-spacing: 1.5px;
     font-size: 1.2rem;
+    color: #000;
+  }
+  .coding .desc .downtext p {
+    margin: 10px 0px;
+    text-align: right;
+    font-size: 1.1rem;
+  }
+  .coding .desc .downtext .back {
+    background-color: #ccd8ff;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 10px;
+    margin: 0px auto;
+  }
+  .coding .desc .downtext .under {
+    text-decoration: underline;
+  }
+  .coding .desc a {
+    display: block;
   }
   .coding .trip {
     display: flex;
@@ -1639,8 +1711,8 @@ body {
     margin: 0px auto;
   }
   .upai li {
-    width: 300px;
-    height: 400px;
+    width: 250px;
+    height: 350px;
     transition: 1s;
   }
   .upai li img {
@@ -1655,11 +1727,99 @@ body {
     margin: 50px auto;
   }
   .downai li {
-    width: 300px;
-    height: 400px;
+    width: 250px;
+    height: 350px;
     transition: 1s;
   }
   .downai li img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  /*footer*/
+  footer {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    text-align: center;
+  }
+  footer .bluebox {
+    width: 90%;
+    height: 80%;
+    background-color: #aabdfb;
+    margin: 0px auto;
+    border-radius: 100px 0px 100px 0px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+  }
+  footer .whitebox {
+    width: 85%;
+    height: 70%;
+    background-color: #fff;
+    margin: 0px auto;
+    border-radius: 100px 0px 100px 0px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  footer h2 {
+    font-size: 1.7rem;
+    font-weight: normal;
+    margin: 50px 0px;
+  }
+  footer .line1 {
+    width: 100%;
+    height: 3px;
+    background-color: #aabdfb;
+  }
+  footer .line2 {
+    width: 100%;
+    height: 3px;
+    background-color: #aabdfb;
+    margin-top: 10px;
+  }
+
+  footer .mailbox {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  footer .callbox {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  footer .instabox {
+    display: flex;
+    gap: 10px;
+  }
+  footer .all {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    font-size: 1.5rem;
+  }
+  footer .rightbox {
+    position: absolute;
+    right: 10%;
+    bottom: 0px;
+  }
+  footer ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 50px 0px;
+  }
+  footer ul li {
+    width: 150px;
+    height: 80px;
+    animation: cloud 1.5s ease infinite;
+    opacity: 0.5;
+  }
+  footer ul li img {
     width: 100%;
     height: 100%;
     object-fit: contain;
