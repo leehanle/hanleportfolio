@@ -10,7 +10,7 @@ ul {
   list-style: none;
 }
 body {
-  background-image: linear-gradient(#e0e8ff, #fdd8ff);
+  background-image: linear-gradient(#e0e8ff, #ffffff);
   background-repeat: no-repeat;
   font-size: 16px;
   overflow-x: hidden;
@@ -39,7 +39,7 @@ body {
     /* border: 1px solid red; */
     width: 70%;
     height: 100px;
-    opacity: 0.5;
+    /* opacity: 0.5; */
     animation: cloud 1.5s ease infinite;
   }
   @keyframes cloud {
@@ -98,165 +98,142 @@ body {
   /*container*/
   /*container1
   self*/
-  #container .self {
-    background-color: #fff;
-    display: flex;
+  .self {
     width: 100%;
     height: 100vh;
-    color: #6479ff;
+    background-color: #fff;
     position: relative;
   }
-  #container .self .bluecloud {
-    width: 20%;
-    height: 100px;
-    opacity: 0.5;
-    margin: 10px;
-    animation: cloud 1.5s ease infinite;
+  .self .profil {
+    display: flex;
+    width: 100%;
+    height: 100%;
   }
-  #container .self .bluecloud img {
+  .self .profil .left {
+    width: 50%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+  }
+  .self .profil .left .me {
+    /* border: 1px solid red; */
+    width: 65%;
+    height: 350px;
+    margin-top: 50px;
+  }
+  .self .profil .left .me img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+  .self .profil .left .text {
+    background-color: #ccd8ff;
+    width: 70%;
+    height: 30%;
+    border-radius: 50px 0px 50px 0px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    padding-left: 30px;
+  }
+  .self .profil .left .text h2 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: #5d72ff;
+  }
+  .self .profil .left .text span {
+    color: #9eb2f6;
+    font-size: 1.5rem;
+  }
+  .self .profil .left .text p {
+    font-size: 1.5rem;
+    margin: 5px 0px;
+  }
+  .self .profil .right {
+    width: 50%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+  .self .profil .right p {
+    font-size: 1.2rem;
+    margin: 30px 0px;
+  }
+  .self .profil .right span {
+    font-size: 1.5rem;
+    color: #5d72ff;
+  }
+  .self .profil .right .skil {
+    font-size: 1.5rem;
+    color: #5d72ff;
+    margin: 30px 0px;
+  }
+  .self .profil .right ul {
+    width: 50%;
+    display: flex;
+    height: 100px;
+    margin: 30px 0px;
+    /* gap: 20px; */
+  }
+  .self .profil .right ul li {
+    width: calc(100% / 3);
+    height: 100%;
+  }
+  .self .profil .right ul li img {
     width: 100%;
     height: 100%;
     object-fit: contain;
   }
-  #container .self .profile {
-    /* border: 1px solid red; */
-    width: 50%;
-    position: relative;
-  }
-  #container .self .profile .me {
-    /* border: 1px solid red; */
-    width: 60%;
-    height: 300px;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  #container .self .profile .me img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-  }
-  #container .self .profile .line1 {
-    background-color: #fbb8ff;
-    width: 80%;
-    height: 3px;
-    position: absolute;
-    top: 50%;
-  }
-  #container .self .profile .work {
-    position: absolute;
-    bottom: 10%;
-    left: 20%;
-    transform: translateX(-20%);
-  }
-  #container .self .profile .work div {
-    margin: 15px 0px;
-  }
-  #container .self .profile .work div h3 {
-    color: #9eb2f6;
-    font-size: 1.3rem;
-  }
-  #container .self .profile .work div p {
-    font-weight: 540;
-  }
-  #container .self .profile .bluecloud2 {
-    position: absolute;
-    bottom: 0px;
-    right: 50px;
-  }
-  #container .self .profile .line2 {
-    background-color: #fbb8ff;
-    height: 200px;
-    width: 3px;
-    position: absolute;
-    bottom: 0px;
-    right: 30px;
-  }
-  #container .self .skil {
-    /* border: 1px solid red; */
-    width: 50%;
-    position: relative;
-  }
-  #container .self .skil .name {
-    position: absolute;
-    top: 9.5%;
-    left: 18%;
-    z-index: 2;
-  }
-  #container .self .skil .name h2 {
-    font-size: 1.5rem;
-  }
-  #container .self .skil .name span {
-    color: #9eb2f6;
-  }
-  #container .self .skil .information {
-    background-color: rgba(251, 184, 255, 0.5);
-    width: 70%;
-    height: 200px;
-    border-radius: 20px 0px 20px 0px;
-    position: absolute;
-    top: 13%;
-    left: 50%;
-    transform: translateX(-50%);
-    /* font-size: 1.3rem; */
-    text-align: center;
-  }
-  #container .self .skil .information p {
-    margin-top: 50px;
-  }
-  #container .self .skil .information span {
-    color: #9eb2f6;
-  }
-  #container .self .skil .gisul {
-    position: absolute;
-    top: 40%;
-    left: 10px;
-    font-size: 1.3rem;
-  }
-  #container .self .skil .allul {
-    position: absolute;
-    width: 60%;
-    bottom: 25%;
-    left: 10%;
-  }
-  #container .self .skil ul {
-    display: flex;
-    gap: 10px;
-    /* border: 1px solid red; */
-    width: 100%;
-    height: 80px;
-    margin: 10px 0px 0px;
-  }
-  #container .self .skil .trul {
-    width: 60%;
-  }
-  #container .self .skil ul li {
-    color: #fff;
-    width: calc(100% / 3);
-    text-align: center;
-    line-height: 80px;
-    border-radius: 50%;
-  }
-  #container .self .skil ul li img {
-    width: 100%;
-    height: 100%;
-  }
-  #container .self .skil .trul li {
-    width: calc(100% / 2);
-  }
-  #container .self .skil .mainme {
-    /* border: 1px solid red; */
-    width: 45%;
-    height: 350px;
+  .self .mainme {
+    width: 35%;
+    height: 400px;
     position: absolute;
     bottom: 0px;
     right: 0px;
   }
-  #container .self .skil .mainme img {
+  .self .mainme img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
+  }
+  .self .cloud {
+    width: 10%;
+    height: 100px;
+    position: absolute;
+    animation: cloud 1.5s ease infinite;
+  }
+  .self .cloud1 {
+    top: 10px;
+    left: 10px;
+  }
+  .self .cloud2 {
+    top: 40%;
+    right: 10%;
+  }
+  .self .cloud3 {
+    top: 50%;
+    left: 40%;
+    transform: translateY(-50%);
+  }
+  .self .cloud img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .self .line {
+    width: 38%;
+    height: 3px;
+    background-color: #ccd8ff;
+    position: absolute;
+    top: 57%;
+    left: 0px;
   }
   #container .self .leftwhitebox {
     width: 50%;
@@ -284,23 +261,23 @@ body {
     width: 100%;
     color: #4459e5;
     position: relative;
+    text-align: left;
   }
   .coding .clinic {
     display: flex;
+    gap: 20px;
     background-color: rgba(255, 255, 255, 0.5);
-    width: 80%;
-    height: 500px;
+    width: 70%;
+    height: 700px;
     margin: 100px auto;
     border-radius: 50px 0px 50px 0px;
     align-items: center;
-    justify-content: center;
-    gap: 10px;
     position: sticky;
     top: 0px;
   }
   .coding .intro {
-    width: 40%;
-    height: 500px;
+    width: 45%;
+    height: 400px;
     display: flex;
   }
   .coding .intro img {
@@ -314,58 +291,80 @@ body {
     flex-direction: column;
     justify-content: space-between;
     height: 70%;
-    text-align: center;
+    /* text-align: center; */
   }
   .coding .desc h2 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     margin: 50px 0px;
     color: #374182;
   }
   .coding .desc p {
-    font-size: 13px;
+    font-size: 1.2rem;
     color: #000;
   }
-  .coding .desc .downtext p {
-    margin: 10px 0px;
-    text-align: right;
-    /* font-size: 1.1rem; */
+  .coding .downtext ul {
+    display: flex;
+    gap: 10px;
+    justify-content: right;
+    color: #000;
   }
-  .coding .desc .downtext .under {
-    text-decoration: underline;
+  .coding .downtext ul li {
+    width: 50px;
+    height: 50px;
   }
-  .coding .desc .downtext .back {
+  .coding .downtext ul li img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .coding .downtext .click {
+    display: flex;
+    gap: 20px;
+    justify-content: right;
+    margin-top: 50px;
+    align-items: center;
+  }
+  .coding .downtext .click .page {
+    color: #000;
     background-color: #ccd8ff;
-    width: 100px;
-    height: 40px;
-    line-height: 40px;
+    padding: 10px;
     border-radius: 10px;
-    margin: 0px auto;
   }
+  .coding .downtext .click .right p {
+    margin-bottom: 20px;
+  }
+  .coding .downtext .click .right .plan {
+    color: #000;
+    background-color: #ccd8ff;
+    padding: 7px;
+    border-radius: 10px;
+  }
+  /* .coding .desc a {
+    display: block;
+  } */
   .coding .trip {
     display: flex;
+    gap: 20px;
     background-color: rgba(255, 255, 255);
-    width: 80%;
-    height: 500px;
+    width: 70%;
+    height: 700px;
     margin: 50px auto;
     border-radius: 50px 0px 50px 0px;
     align-items: center;
     position: sticky;
     top: 0px;
-    justify-content: center;
-    gap: 10px;
   }
   .coding .jpuppet {
     display: flex;
+    gap: 20px;
     background-color: #e5ebff;
-    width: 80%;
-    height: 500px;
+    width: 70%;
+    height: 700px;
     margin: 50px auto;
     border-radius: 50px 0px 50px 0px;
     align-items: center;
     position: sticky;
     top: 0px;
-    justify-content: center;
-    gap: 10px;
   }
   .coding a {
     display: block;
@@ -377,7 +376,7 @@ body {
     height: 100px;
     position: absolute;
     top: 0px;
-    opacity: 0.5;
+    /* opacity: 0.5; */
     animation: cloud 1.5s ease infinite;
   }
 
@@ -391,8 +390,8 @@ body {
     height: 100px;
     position: absolute;
     top: 20%;
-    right: 0px;
-    opacity: 0.5;
+    right: 10%;
+    /* opacity: 0.5; */
     animation: cloud 1.5s ease infinite;
   }
   .coding .cloud2 img {
@@ -408,8 +407,8 @@ body {
     opacity: 0.5;
     position: absolute;
     top: 50%;
-    left: 0px;
-    opacity: 0.5;
+    left: 30px;
+    /* opacity: 0.5; */
     animation: cloud 1.5s ease infinite;
   }
 
@@ -423,8 +422,8 @@ body {
     height: 100px;
     position: absolute;
     top: 70%;
-    right: 0px;
-    opacity: 0.5;
+    right: 10%;
+    /* opacity: 0.5; */
     animation: cloud 1.5s ease infinite;
   }
   .coding .cloud4 img {
@@ -433,100 +432,84 @@ body {
     object-fit: contain;
   }
   /*container3
-  ai*/
-  .ai {
-    background-image: url(../img/일러스트카드쌓기배경.png);
-    /* background-repeat: no-repeat; */
-    background-size: cover;
+  sian*/
+  .sian {
+    position: relative;
     width: 100%;
     height: 100vh;
-    position: relative;
-    /* opacity: 0; */
   }
-  .ai h2 {
-    font-size: 1.7rem;
-    background-color: #7d8eff;
-    width: 25%;
-    text-align: center;
-    color: #fff;
-    height: 70px;
-    line-height: 70px;
-    border-radius: 50px;
+  .sian h2 {
+    color: #6479ff;
     position: absolute;
-    top: 10%;
     left: 20%;
-    z-index: 2;
+    top: 5%;
   }
-  .ai .aiimg div {
-    width: 50%;
-    height: 450px;
+  .sian .sianimg div {
+    width: 450px;
+    height: 800px;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    display: none;
-    /* opacity: 0; */
+    top: 0%;
+
     /* transform: translate(-50%, -50%); */
   }
-  .ai .aiimg .aiimg1 {
-    transform: translateX(-50%) rotate(12deg);
-  }
-  .ai .aiimg .aiimg2 {
-    transform: translateX(-50%) rotate(-12deg);
-  }
-  .ai .aiimg .aiimg3 {
-    transform: translateX(-50%) rotate(5deg);
-  }
-  .ai .aiimg .aiimg4 {
-    transform: translateX(-50%) rotate(-5deg);
-  }
-  .ai .aiimg .aiimg5 {
-    transform: translateX(-50%) rotate(10deg);
-  }
-  .ai .aiimg .aiimg6 {
-    transform: translateX(-50%) rotate(-10deg);
-  }
-  .ai .aiimg div img {
+
+  .sian .sianimg div img {
     width: 100%;
     height: 100%;
     object-fit: contain;
   }
-  .ai .cloud div {
-    width: 20%;
+  .sian .sianimg .movi {
+    /* display: none; */
+    left: 0%;
+    z-index: 2;
+  }
+  .sian .sianimg .goung {
+    /* display: none; */
+    right: 0%;
+    z-index: 2;
+  }
+  .sian .cloud div {
+    width: 10%;
     height: 100px;
-    opacity: 0.5;
+    /* opacity: 0.5; */
     animation: cloud 1.5s ease infinite;
   }
-  .ai .cloud .cloud1 {
+  .sian .cloud .cloud1 {
     position: absolute;
-    top: 10%;
-    left: 10%;
+    top: 1%;
+    left: 35%;
   }
-  .ai .cloud .cloud2 {
+  .sian .cloud .cloud2 {
     position: absolute;
     top: 23%;
-    right: 5%;
+    right: 10%;
+    display: none;
   }
-  .ai .cloud .cloud3 {
+  .sian .cloud .cloud3 {
     position: absolute;
     top: 50%;
-    left: 5%;
+    left: 10%;
+    display: none;
   }
-  .ai .cloud .cloud4 {
+  .sian .cloud .cloud4 {
     position: absolute;
     top: 65%;
-    right: 5%;
+    right: 10%;
+    display: none;
   }
-  .ai .cloud .cloud5 {
+  .sian .cloud .cloud5 {
     position: absolute;
     top: 85%;
     left: 5%;
+    display: none;
   }
-  .ai .cloud .cloud6 {
+  .sian .cloud .cloud6 {
     position: absolute;
     bottom: 0px;
     right: 0px;
+    display: none;
   }
-  .ai .cloud div img {
+  .sian .cloud div img {
     width: 100%;
     height: 100%;
     object-fit: contain;
@@ -538,6 +521,12 @@ body {
     width: 100%;
     height: 100vh;
     position: relative;
+  }
+  .aiall h2 {
+    color: #6479ff;
+    position: absolute;
+    top: 15%;
+    left: 15%;
   }
   .aiall .cloud1 {
     width: 15%;
@@ -607,17 +596,17 @@ body {
   footer .bluebox {
     width: 90%;
     height: 80%;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: #e0e8ff;
     margin: 0px auto;
     border-radius: 100px 0px 100px 0px;
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
-    transform: translate(-50%, -50%) scale(0);
+    transform: translateX(-50%) scale(0);
   }
   footer .whitebox {
     width: 85%;
-    height: 80%;
+    height: 85%;
     background-color: #fff;
     margin: 0px auto;
     border-radius: 100px 0px 100px 0px;
@@ -634,12 +623,12 @@ body {
   footer .line1 {
     width: 100%;
     height: 3px;
-    background-color: #fbb8ff;
+    background-color: #ccd8ff;
   }
   footer .line2 {
     width: 100%;
     height: 3px;
-    background-color: #fbb8ff;
+    background-color: #ccd8ff;
     margin-top: 10px;
   }
 
@@ -679,13 +668,15 @@ body {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    margin: 50px 0px;
+    /* margin: 50px 0px; */
+    position: absolute;
+    bottom: 0px;
   }
   footer ul li {
     width: 15%;
     height: 80px;
     animation: cloud 1.5s ease infinite;
-    opacity: 0.5;
+    /* opacity: 0.5; */
   }
   footer ul li img {
     width: 100%;
@@ -709,7 +700,7 @@ body {
     /* border: 1px solid red; */
     width: 70%;
     height: 100px;
-    opacity: 0.5;
+    /* opacity: 0.5; */
     animation: cloud 1.5s ease infinite;
   }
   @keyframes cloud {
@@ -768,165 +759,142 @@ body {
   /*container*/
   /*container1
   self*/
-  #container .self {
-    background-color: #fff;
-    display: flex;
+  .self {
     width: 100%;
     height: 100vh;
-    color: #6479ff;
+    background-color: #fff;
     position: relative;
   }
-  #container .self .bluecloud {
-    width: 20%;
-    height: 100px;
-    opacity: 0.5;
-    margin: 10px;
-    animation: cloud 1.5s ease infinite;
+  .self .profil {
+    display: flex;
+    width: 100%;
+    height: 100%;
   }
-  #container .self .bluecloud img {
+  .self .profil .left {
+    width: 50%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+  }
+  .self .profil .left .me {
+    /* border: 1px solid red; */
+    width: 50%;
+    height: 350px;
+    margin-top: 50px;
+  }
+  .self .profil .left .me img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+  .self .profil .left .text {
+    background-color: #ccd8ff;
+    width: 70%;
+    height: 30%;
+    border-radius: 50px 0px 50px 0px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    padding-left: 30px;
+  }
+  .self .profil .left .text h2 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: #5d72ff;
+  }
+  .self .profil .left .text span {
+    color: #9eb2f6;
+    font-size: 1.5rem;
+  }
+  .self .profil .left .text p {
+    font-size: 1.5rem;
+    margin: 5px 0px;
+  }
+  .self .profil .right {
+    width: 50%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+  .self .profil .right p {
+    font-size: 1.2rem;
+    margin: 30px 0px;
+  }
+  .self .profil .right span {
+    font-size: 1.5rem;
+    color: #5d72ff;
+  }
+  .self .profil .right .skil {
+    font-size: 1.5rem;
+    color: #5d72ff;
+    margin: 30px 0px;
+  }
+  .self .profil .right ul {
+    width: 40%;
+    display: flex;
+    height: 100px;
+    margin: 30px 0px;
+    /* gap: 20px; */
+  }
+  .self .profil .right ul li {
+    width: calc(100% / 3);
+    height: 100%;
+  }
+  .self .profil .right ul li img {
     width: 100%;
     height: 100%;
     object-fit: contain;
   }
-  #container .self .profile {
-    /* border: 1px solid red; */
-    width: 50%;
-    position: relative;
-  }
-  #container .self .profile .me {
-    /* border: 1px solid red; */
-    width: 60%;
+  .self .mainme {
+    width: 35%;
     height: 400px;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  #container .self .profile .me img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-  }
-  #container .self .profile .line1 {
-    background-color: #fbb8ff;
-    width: 80%;
-    height: 3px;
-    position: absolute;
-    top: 60%;
-  }
-  #container .self .profile .work {
-    position: absolute;
-    bottom: 3%;
-    left: 20%;
-    transform: translateX(-20%);
-  }
-  #container .self .profile .work div {
-    margin: 15px 0px;
-  }
-  #container .self .profile .work div h3 {
-    color: #9eb2f6;
-    font-size: 1.3rem;
-  }
-  #container .self .profile .work div p {
-    font-weight: 540;
-  }
-  #container .self .profile .bluecloud2 {
-    position: absolute;
-    bottom: 0px;
-    right: 50px;
-  }
-  #container .self .profile .line2 {
-    background-color: #fbb8ff;
-    height: 200px;
-    width: 3px;
-    position: absolute;
-    bottom: 0px;
-    right: 30px;
-  }
-  #container .self .skil {
-    /* border: 1px solid red; */
-    width: 50%;
-    position: relative;
-  }
-  #container .self .skil .name {
-    position: absolute;
-    top: 8%;
-    left: 15%;
-    z-index: 2;
-  }
-  #container .self .skil .name h2 {
-    font-size: 2rem;
-  }
-  #container .self .skil .name span {
-    color: #9eb2f6;
-  }
-  #container .self .skil .information {
-    background-color: rgba(251, 184, 255, 0.5);
-    width: 70%;
-    height: 200px;
-    border-radius: 20px 0px 20px 0px;
-    position: absolute;
-    top: 13%;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 1.3rem;
-    text-align: center;
-  }
-  #container .self .skil .information p {
-    margin-top: 50px;
-  }
-  #container .self .skil .information span {
-    color: #9eb2f6;
-  }
-  #container .self .skil .gisul {
-    position: absolute;
-    top: 40%;
-    left: 10px;
-    font-size: 1.3rem;
-  }
-  #container .self .skil .allul {
-    position: absolute;
-    width: 60%;
-    bottom: 20%;
-    left: 10%;
-  }
-  #container .self .skil ul {
-    display: flex;
-    gap: 10px;
-    /* border: 1px solid red; */
-    width: 100%;
-    height: 100px;
-    margin: 10px 0px 0px;
-  }
-  #container .self .skil ul li img {
-    width: 100%;
-    height: 100%;
-  }
-  #container .self .skil .trul {
-    width: 60%;
-  }
-  #container .self .skil ul li {
-    color: #fff;
-    width: calc(100% / 3);
-    text-align: center;
-    line-height: 100px;
-    border-radius: 50%;
-  }
-  #container .self .skil .trul li {
-    width: calc(100% / 2);
-  }
-  #container .self .skil .mainme {
-    /* border: 1px solid red; */
-    width: 30%;
-    height: 350px;
     position: absolute;
     bottom: 0px;
     right: 0px;
   }
-  #container .self .skil .mainme img {
+  .self .mainme img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
+  }
+  .self .cloud {
+    width: 10%;
+    height: 100px;
+    position: absolute;
+    animation: cloud 1.5s ease infinite;
+  }
+  .self .cloud1 {
+    top: 10px;
+    left: 10px;
+  }
+  .self .cloud2 {
+    top: 40%;
+    right: 10%;
+  }
+  .self .cloud3 {
+    top: 50%;
+    left: 40%;
+    transform: translateY(-50%);
+  }
+  .self .cloud img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .self .line {
+    width: 38%;
+    height: 3px;
+    background-color: #ccd8ff;
+    position: absolute;
+    top: 57%;
+    left: 0px;
   }
   #container .self .leftwhitebox {
     width: 50%;
@@ -954,23 +922,23 @@ body {
     width: 100%;
     color: #4459e5;
     position: relative;
+    text-align: left;
   }
   .coding .clinic {
     display: flex;
+    gap: 20px;
     background-color: rgba(255, 255, 255, 0.5);
-    width: 80%;
-    height: 600px;
+    width: 70%;
+    height: 700px;
     margin: 100px auto;
     border-radius: 50px 0px 50px 0px;
     align-items: center;
-    justify-content: center;
-    gap: 10px;
     position: sticky;
     top: 0px;
   }
   .coding .intro {
-    width: 40%;
-    height: 500px;
+    width: 45%;
+    height: 400px;
     display: flex;
   }
   .coding .intro img {
@@ -984,7 +952,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     height: 70%;
-    text-align: center;
+    /* text-align: center; */
   }
   .coding .desc h2 {
     font-size: 1.7rem;
@@ -992,53 +960,72 @@ body {
     color: #374182;
   }
   .coding .desc p {
-    /* font-size: 1.2rem; */
+    font-size: 1.2rem;
     color: #000;
   }
-  .coding .desc .downtext p {
-    margin: 10px 0px;
-    text-align: right;
-    /* font-size: 1.1rem; */
+  .coding .downtext ul {
+    display: flex;
+    gap: 10px;
+    justify-content: right;
+    color: #000;
   }
-  .coding .desc .downtext .back {
+  .coding .downtext ul li {
+    width: 50px;
+    height: 50px;
+  }
+  .coding .downtext ul li img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .coding .downtext .click {
+    display: flex;
+    gap: 20px;
+    justify-content: right;
+    margin-top: 50px;
+    align-items: center;
+  }
+  .coding .downtext .click .page {
+    color: #000;
     background-color: #ccd8ff;
-    width: 100px;
-    height: 40px;
-    line-height: 40px;
+    padding: 10px;
     border-radius: 10px;
-    margin: 0px auto;
   }
-  .coding .desc .downtext .under {
-    text-decoration: underline;
+  .coding .downtext .click .right p {
+    margin-bottom: 20px;
   }
-  .coding .desc a {
+  .coding .downtext .click .right .plan {
+    color: #000;
+    background-color: #ccd8ff;
+    padding: 7px;
+    border-radius: 10px;
+  }
+  /* .coding .desc a {
     display: block;
-  }
+  } */
   .coding .trip {
     display: flex;
+    gap: 20px;
     background-color: rgba(255, 255, 255);
-    width: 80%;
+    width: 70%;
     height: 700px;
     margin: 50px auto;
     border-radius: 50px 0px 50px 0px;
     align-items: center;
     position: sticky;
     top: 0px;
-    justify-content: center;
-    gap: 10px;
   }
   .coding .jpuppet {
     display: flex;
+    gap: 20px;
     background-color: #e5ebff;
-    width: 80%;
+    width: 70%;
     height: 700px;
     margin: 50px auto;
     border-radius: 50px 0px 50px 0px;
     align-items: center;
     position: sticky;
     top: 0px;
-    justify-content: center;
-    gap: 10px;
   }
   .coding a {
     display: block;
@@ -1050,7 +1037,7 @@ body {
     height: 100px;
     position: absolute;
     top: 0px;
-    opacity: 0.5;
+    /* opacity: 0.5; */
     animation: cloud 1.5s ease infinite;
   }
 
@@ -1065,7 +1052,7 @@ body {
     position: absolute;
     top: 20%;
     right: 10%;
-    opacity: 0.5;
+    /* opacity: 0.5; */
     animation: cloud 1.5s ease infinite;
   }
   .coding .cloud2 img {
@@ -1082,7 +1069,7 @@ body {
     position: absolute;
     top: 50%;
     left: 30px;
-    opacity: 0.5;
+    /* opacity: 0.5; */
     animation: cloud 1.5s ease infinite;
   }
 
@@ -1096,8 +1083,8 @@ body {
     height: 100px;
     position: absolute;
     top: 70%;
-    right: 0px;
-    opacity: 0.5;
+    right: 10%;
+    /* opacity: 0.5; */
     animation: cloud 1.5s ease infinite;
   }
   .coding .cloud4 img {
@@ -1106,99 +1093,79 @@ body {
     object-fit: contain;
   }
   /*container3
-  ai*/
-  .ai {
-    background-image: url(../img/일러스트카드쌓기배경.png);
-    /* background-repeat: no-repeat; */
-    background-size: cover;
+  sian*/
+  .sian {
+    position: relative;
     width: 100%;
     height: 100vh;
-    position: relative;
   }
-  .ai h2 {
-    font-size: 1.7rem;
-    background-color: #7d8eff;
-    width: 20%;
-    text-align: center;
-    color: #fff;
-    height: 70px;
-    line-height: 70px;
-    border-radius: 50px;
+  .sian h2 {
+    color: #6479ff;
     position: absolute;
-    top: 10%;
     left: 20%;
-    z-index: 2;
+    top: 5%;
   }
-  .ai .aiimg div {
-    width: 45%;
-    height: 450px;
+  .sian .sianimg div {
+    width: 450px;
+    height: 800px;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    display: none;
-    /* opacity: 0; */
+    top: 0%;
+
     /* transform: translate(-50%, -50%); */
   }
-  .ai .aiimg .aiimg1 {
-    transform: translateX(-50%) rotate(12deg);
-  }
-  .ai .aiimg .aiimg2 {
-    transform: translateX(-50%) rotate(-12deg);
-  }
-  .ai .aiimg .aiimg3 {
-    transform: translateX(-50%) rotate(5deg);
-  }
-  .ai .aiimg .aiimg4 {
-    transform: translateX(-50%) rotate(-5deg);
-  }
-  .ai .aiimg .aiimg5 {
-    transform: translateX(-50%) rotate(10deg);
-  }
-  .ai .aiimg .aiimg6 {
-    transform: translateX(-50%) rotate(-10deg);
-  }
-  .ai .aiimg div img {
+
+  .sian .sianimg div img {
     width: 100%;
     height: 100%;
     object-fit: contain;
   }
-  .ai .cloud div {
-    width: 17%;
+  .sian .sianimg .movi {
+    /* display: none; */
+    left: 0%;
+    z-index: 2;
+  }
+  .sian .sianimg .goung {
+    /* display: none; */
+    right: 0%;
+    z-index: 2;
+  }
+  .sian .cloud div {
+    width: 150px;
     height: 100px;
-    opacity: 0.5;
+    /* opacity: 0.5; */
     animation: cloud 1.5s ease infinite;
   }
-  .ai .cloud .cloud1 {
+  .sian .cloud .cloud1 {
     position: absolute;
     top: 10%;
-    left: 10%;
+    left: 5%;
   }
-  .ai .cloud .cloud2 {
+  .sian .cloud .cloud2 {
     position: absolute;
     top: 23%;
     right: 10%;
   }
-  .ai .cloud .cloud3 {
+  .sian .cloud .cloud3 {
     position: absolute;
     top: 50%;
     left: 10%;
   }
-  .ai .cloud .cloud4 {
+  .sian .cloud .cloud4 {
     position: absolute;
     top: 65%;
-    right: 5%;
+    right: 10%;
   }
-  .ai .cloud .cloud5 {
+  .sian .cloud .cloud5 {
     position: absolute;
     top: 85%;
     left: 5%;
   }
-  .ai .cloud .cloud6 {
+  .sian .cloud .cloud6 {
     position: absolute;
     bottom: 0px;
     right: 0px;
   }
-  .ai .cloud div img {
+  .sian .cloud div img {
     width: 100%;
     height: 100%;
     object-fit: contain;
@@ -1210,6 +1177,12 @@ body {
     width: 100%;
     height: 100vh;
     position: relative;
+  }
+  .aiall h2 {
+    color: #6479ff;
+    position: absolute;
+    top: 13%;
+    left: 15%;
   }
   .aiall .cloud1 {
     width: 15%;
@@ -1279,17 +1252,17 @@ body {
   footer .bluebox {
     width: 90%;
     height: 80%;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: #e0e8ff;
     margin: 0px auto;
     border-radius: 100px 0px 100px 0px;
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
-    transform: translate(-50%, -50%) scale(0);
+    transform: translateX(-50%) scale(0);
   }
   footer .whitebox {
     width: 85%;
-    height: 70%;
+    height: 80%;
     background-color: #fff;
     margin: 0px auto;
     border-radius: 100px 0px 100px 0px;
@@ -1306,12 +1279,12 @@ body {
   footer .line1 {
     width: 100%;
     height: 3px;
-    background-color: #fbb8ff;
+    background-color: #ccd8ff;
   }
   footer .line2 {
     width: 100%;
     height: 3px;
-    background-color: #fbb8ff;
+    background-color: #ccd8ff;
     margin-top: 10px;
   }
 
@@ -1351,13 +1324,15 @@ body {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    margin: 50px 0px;
+    /* margin: 50px 0px; */
+    position: absolute;
+    bottom: 0px;
   }
   footer ul li {
-    width: 150px;
+    width: 15%;
     height: 80px;
     animation: cloud 1.5s ease infinite;
-    opacity: 0.5;
+    /* opacity: 0.5; */
   }
   footer ul li img {
     width: 100%;
@@ -1381,7 +1356,7 @@ body {
     /* border: 1px solid red; */
     width: 120px;
     height: 100px;
-    opacity: 0.5;
+    /* opacity: 0.5; */
     animation: cloud 1.5s ease infinite;
   }
   @keyframes cloud {
@@ -1440,167 +1415,140 @@ body {
   /*container*/
   /*container1
   self*/
-  #container .self {
-    background-color: #fff;
-    display: flex;
+  .self {
     width: 100%;
     height: 100vh;
-    color: #000;
+    background-color: #fff;
     position: relative;
   }
-  #container .self .bluecloud {
-    width: 100px;
-    height: 100px;
-    opacity: 0.5;
-    margin: 10px;
-    animation: cloud 1.5s ease infinite;
-  }
-  #container .self .bluecloud img {
+  .self .profil {
+    display: flex;
     width: 100%;
     height: 100%;
-    object-fit: contain;
   }
-  #container .self .profile {
-    /* border: 1px solid red; */
+  .self .profil .left {
     width: 50%;
-    position: relative;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
   }
-  #container .self .profile .me {
+  .self .profil .left .me {
     /* border: 1px solid red; */
-    width: 350px;
+    width: 37%;
     height: 450px;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
   }
-  #container .self .profile .me img {
+  .self .profil .left .me img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 20px;
   }
-  #container .self .profile .line1 {
-    background-color: #fbb8ff;
-    width: 800px;
-    height: 3px;
-    position: absolute;
-    top: 63%;
+  .self .profil .left .text {
+    background-color: #ccd8ff;
+    width: 60%;
+    height: 30%;
+    border-radius: 50px 0px 50px 0px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    padding-left: 50px;
   }
-  #container .self .profile .work {
-    position: absolute;
-    bottom: 3%;
-    left: 50%;
-    transform: translateX(-50%);
+  .self .profil .left .text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #5d72ff;
   }
-  #container .self .profile .work div {
+  .self .profil .left .text span {
+    color: #9eb2f6;
+    font-size: 2.3rem;
+  }
+  .self .profil .left .text p {
+    font-size: 1.8rem;
+    margin: 5px 0px;
+  }
+  .self .profil .right {
+    width: 50%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+  .self .profil .right p {
+    font-size: 1.8rem;
     margin: 30px 0px;
   }
-  #container .self .profile .work div h3 {
-    color: #9eb2f6;
-    font-size: 1.5rem;
+  .self .profil .right span {
+    font-size: 2.1rem;
+    color: #5d72ff;
   }
-  #container .self .profile .work div p {
-    font-weight: 540;
-    font-size: 1.1rem;
+  .self .profil .right .skil {
+    font-size: 2.1rem;
+    color: #5d72ff;
+    margin: 30px 0px;
   }
-  #container .self .profile .bluecloud2 {
-    position: absolute;
-    bottom: 0px;
-    right: 50px;
-  }
-  #container .self .profile .line2 {
-    background-color: #fbb8ff;
-    height: 300px;
-    width: 3px;
-    position: absolute;
-    bottom: 0px;
-    right: 30px;
-  }
-  #container .self .skil {
-    /* border: 1px solid red; */
-    width: 50%;
-    position: relative;
-  }
-  #container .self .skil .name {
-    position: absolute;
-    top: 70px;
-    left: 16%;
-    z-index: 2;
-  }
-  #container .self .skil .name h2 {
-    font-size: 2.5rem;
-  }
-  #container .self .skil .name span {
-    color: #9eb2f6;
-  }
-  #container .self .skil .information {
-    background-color: rgba(251, 184, 255, 0.5);
-    width: 70%;
-    height: 200px;
-    border-radius: 20px 0px 20px 0px;
-    position: absolute;
-    top: 13%;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 1.7rem;
-    text-align: center;
-  }
-  #container .self .skil .information p {
-    margin-top: 40px;
-  }
-  #container .self .skil .information span {
-    color: #9eb2f6;
-  }
-  #container .self .skil .gisul {
-    position: absolute;
-    top: 40%;
-    left: 10px;
-    font-size: 1.2rem;
-  }
-  #container .self .skil .allul {
-    position: absolute;
-    width: 60%;
-    bottom: 10px;
-    left: 10%;
-  }
-  #container .self .skil ul {
+  .self .profil .right ul {
+    width: 40%;
     display: flex;
-    gap: 50px;
-    /* border: 1px solid red; */
-    width: 100%;
-    height: 130px;
-    margin: 50px 0px 0px;
+    height: 100px;
+    margin: 30px 0px;
   }
-  #container .self .skil .trul {
-    width: 60%;
-  }
-  #container .self .skil ul li {
-    color: #fff;
+  .self .profil .right ul li {
     width: calc(100% / 3);
-    text-align: center;
-    line-height: 150px;
-    border-radius: 50%;
+    height: 100%;
   }
-  #container .self .skil ul li img {
+  .self .profil .right ul li img {
     width: 100%;
     height: 100%;
     object-fit: contain;
   }
-  #container .self .skil .trul li {
-    width: calc(100% / 2);
-  }
-  #container .self .skil .mainme {
-    /* border: 1px solid red; */
-    width: 29%;
+  .self .mainme {
+    width: 30%;
     height: 500px;
     position: absolute;
     bottom: 0px;
     right: 0px;
   }
-  #container .self .skil .mainme img {
+  .self .mainme img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
+  }
+  .self .cloud {
+    width: 7%;
+    height: 100px;
+    position: absolute;
+    animation: cloud 1.5s ease infinite;
+  }
+  .self .cloud1 {
+    top: 10px;
+    left: 10px;
+  }
+  .self .cloud2 {
+    top: 30%;
+    right: 10%;
+  }
+  .self .cloud3 {
+    top: 50%;
+    left: 40%;
+    transform: translateY(-50%);
+  }
+  .self .cloud img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .self .line {
+    width: 38%;
+    height: 3px;
+    background-color: #ccd8ff;
+    position: absolute;
+    top: 57%;
+    left: 0px;
   }
   #container .self .leftwhitebox {
     width: 50%;
@@ -1628,6 +1576,7 @@ body {
     width: 100%;
     color: #4459e5;
     position: relative;
+    text-align: left;
   }
   .coding .clinic {
     display: flex;
@@ -1656,7 +1605,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     height: 70%;
-    text-align: center;
+    /* text-align: center; */
   }
   .coding .desc h2 {
     font-size: 1.7rem;
@@ -1667,25 +1616,46 @@ body {
     font-size: 1.2rem;
     color: #000;
   }
-  .coding .desc .downtext p {
-    margin: 10px 0px;
-    text-align: right;
-    font-size: 1.1rem;
+  .coding .downtext ul {
+    display: flex;
+    gap: 10px;
+    justify-content: right;
+    color: #000;
   }
-  .coding .desc .downtext .back {
+  .coding .downtext ul li {
+    width: 50px;
+    height: 50px;
+  }
+  .coding .downtext ul li img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .coding .downtext .click {
+    display: flex;
+    gap: 20px;
+    justify-content: right;
+    margin-top: 50px;
+    align-items: center;
+  }
+  .coding .downtext .click .page {
+    color: #000;
     background-color: #ccd8ff;
-    width: 100px;
-    height: 40px;
-    line-height: 40px;
+    padding: 10px;
     border-radius: 10px;
-    margin: 0px auto;
   }
-  .coding .desc .downtext .under {
-    text-decoration: underline;
+  .coding .downtext .click .right p {
+    margin-bottom: 20px;
   }
-  .coding .desc a {
+  .coding .downtext .click .right .plan {
+    color: #000;
+    background-color: #ccd8ff;
+    padding: 7px;
+    border-radius: 10px;
+  }
+  /* .coding .desc a {
     display: block;
-  }
+  } */
   .coding .trip {
     display: flex;
     background-color: rgba(255, 255, 255);
@@ -1718,7 +1688,7 @@ body {
     height: 100px;
     position: absolute;
     top: 0px;
-    opacity: 0.5;
+    /* opacity: 0.5; */
     animation: cloud 1.5s ease infinite;
   }
 
@@ -1733,7 +1703,7 @@ body {
     position: absolute;
     top: 20%;
     right: 10%;
-    opacity: 0.5;
+    /* opacity: 0.5; */
     animation: cloud 1.5s ease infinite;
   }
   .coding .cloud2 img {
@@ -1750,7 +1720,7 @@ body {
     position: absolute;
     top: 50%;
     left: 30px;
-    opacity: 0.5;
+    /* opacity: 0.5; */
     animation: cloud 1.5s ease infinite;
   }
 
@@ -1765,7 +1735,7 @@ body {
     position: absolute;
     top: 70%;
     right: 10%;
-    opacity: 0.5;
+    /* opacity: 0.5; */
     animation: cloud 1.5s ease infinite;
   }
   .coding .cloud4 img {
@@ -1774,104 +1744,89 @@ body {
     object-fit: contain;
   }
   /*container3
-  ai*/
-  .ai {
-    background-image: url(../img/일러스트카드쌓기배경.png);
-    /* background-repeat: no-repeat; */
-    background-size: cover;
+  sian*/
+  .sian {
+    position: relative;
     width: 100%;
     height: 100vh;
-    position: relative;
   }
-  .ai h2 {
-    font-size: 1.7rem;
-    background-color: #7d8eff;
-    width: 200px;
-    text-align: center;
-    color: #fff;
-    height: 70px;
-    line-height: 70px;
-    border-radius: 50px;
+  .sian h2 {
+    color: #6479ff;
     position: absolute;
-    top: 20%;
     left: 20%;
+    top: 10%;
   }
-  .ai .aiimg div {
-    width: 350px;
-    height: 450px;
+  .sian .sianimg div {
+    width: 450px;
+    height: 800px;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    display: none;
-    /* opacity: 0; */
+    top: 60%;
+
     /* transform: translate(-50%, -50%); */
   }
-  .ai .aiimg .aiimg1 {
-    transform: translateX(-50%) rotate(12deg);
-  }
-  .ai .aiimg .aiimg2 {
-    transform: translateX(-50%) rotate(-12deg);
-  }
-  .ai .aiimg .aiimg3 {
-    transform: translateX(-50%) rotate(5deg);
-  }
-  .ai .aiimg .aiimg4 {
-    transform: translateX(-50%) rotate(-5deg);
-  }
-  .ai .aiimg .aiimg5 {
-    transform: translateX(-50%) rotate(10deg);
-  }
-  .ai .aiimg .aiimg6 {
-    transform: translateX(-50%) rotate(-10deg);
-  }
-  .ai .aiimg div img {
+
+  .sian .sianimg div img {
     width: 100%;
     height: 100%;
     object-fit: contain;
   }
-  .ai .cloud div {
+  .sian .sianimg .movi {
+    /* display: none; */
+    left: 30%;
+  }
+  .sian .sianimg .goung {
+    /* display: none; */
+    right: 30%;
+  }
+  .sian .cloud div {
     width: 150px;
     height: 100px;
-    opacity: 0.5;
+    /* opacity: 0.5; */
     animation: cloud 1.5s ease infinite;
   }
-  .ai .cloud .cloud1 {
+  .sian .cloud .cloud1 {
     position: absolute;
     top: 10%;
     left: 10%;
   }
-  .ai .cloud .cloud2 {
+  .sian .cloud .cloud2 {
     position: absolute;
     top: 23%;
     right: 20%;
   }
-  .ai .cloud .cloud3 {
+  .sian .cloud .cloud3 {
     position: absolute;
     top: 50%;
     left: 15%;
   }
-  .ai .cloud .cloud4 {
+  .sian .cloud .cloud4 {
     position: absolute;
     top: 65%;
     right: 15%;
   }
-  .ai .cloud .cloud5 {
+  .sian .cloud .cloud5 {
     position: absolute;
     top: 85%;
     left: 5%;
   }
-  .ai .cloud .cloud6 {
+  .sian .cloud .cloud6 {
     position: absolute;
     bottom: 0px;
     right: 0px;
   }
-  .ai .cloud div img {
+  .sian .cloud div img {
     width: 100%;
     height: 100%;
     object-fit: contain;
   }
   /*container4
   aiall*/
+  .aiall h2 {
+    color: #6479ff;
+    position: absolute;
+    top: 10%;
+    left: 15%;
+  }
   .aiall {
     background-color: #fff;
     width: 100%;
@@ -1934,6 +1889,7 @@ body {
     height: 100%;
     object-fit: contain;
   }
+
   /*footer*/
   footer {
     width: 100%;
@@ -1944,13 +1900,13 @@ body {
   footer .bluebox {
     width: 90%;
     height: 80%;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: #e0e8ff;
     margin: 0px auto;
     border-radius: 100px 0px 100px 0px;
     position: absolute;
-    top: 50%;
+    top: 0px;
     left: 50%;
-    transform: translate(-50%, -50%) scale(0);
+    transform: translateX(-50%) scale(0);
   }
   footer .whitebox {
     width: 95%;
@@ -1964,20 +1920,28 @@ body {
     transform: translate(-50%, -50%);
   }
   footer h2 {
-    font-size: 1.7rem;
+    font-size: 2rem;
     font-weight: normal;
-    margin: 50px 0px;
+    /* margin: 50px 0px; */
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
   }
   footer .line1 {
     width: 100%;
     height: 3px;
-    background-color: #fbb8ff;
+    background-color: #ccd8ff;
+    position: absolute;
+    top: 10%;
   }
   footer .line2 {
     width: 100%;
     height: 3px;
-    background-color: #fbb8ff;
+    background-color: #ccd8ff;
     margin-top: 10px;
+    position: absolute;
+    bottom: 10%;
   }
 
   footer .mailbox {
@@ -2004,18 +1968,21 @@ body {
     position: absolute;
     right: 10%;
     bottom: 0px;
+    z-index: 2;
   }
   footer ul {
     display: flex;
     width: 100%;
     justify-content: space-between;
     margin: 50px 0px;
+    position: absolute;
+    bottom: -20px;
   }
   footer ul li {
     width: 150px;
     height: 80px;
     animation: cloud 1.5s ease infinite;
-    opacity: 0.5;
+    /* opacity: 0.5; */
   }
   footer ul li img {
     width: 100%;
