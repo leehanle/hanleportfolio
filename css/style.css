@@ -532,7 +532,7 @@ body {
   .sian .textbookplan {
     position: absolute;
     bottom: 5%;
-    right: 22%;
+    right: 0%;
     background-color: #ccd8ff;
     width: 20%;
     height: 5%;
@@ -544,7 +544,7 @@ body {
   .sian .carplan {
     position: absolute;
     bottom: 5%;
-    right: 0%;
+    right: 22%;
     background-color: #ccd8ff;
     width: 20%;
     height: 5%;
@@ -1237,7 +1237,7 @@ body {
   .sian .textbookplan {
     position: absolute;
     top: 0%;
-    right: 16%;
+    right: 0%;
     background-color: #ccd8ff;
     width: 15%;
     height: 5%;
@@ -1249,7 +1249,7 @@ body {
   .sian .carplan {
     position: absolute;
     top: 0%;
-    right: 0%;
+    right: 16%;
     background-color: #ccd8ff;
     width: 15%;
     height: 5%;
@@ -1880,7 +1880,7 @@ body {
   }
   .sian .sianimg .car {
     /* display: none; */
-    right: 37%;
+    right: 38%;
   }
   .sian .cloud div {
     width: 150px;
@@ -1937,7 +1937,7 @@ body {
   }
   .sian .textbookplan {
     position: absolute;
-    top: 47%;
+    top: 54%;
     right: 10%;
     background-color: #ccd8ff;
     width: 8%;
@@ -1949,7 +1949,7 @@ body {
   }
   .sian .carplan {
     position: absolute;
-    top: 54%;
+    top: 47%;
     right: 10%;
     background-color: #ccd8ff;
     width: 8%;
