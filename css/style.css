@@ -18,7 +18,7 @@ body {
   font-family: "ChangwonDangamRounded";
 }
 html {
-  overflow-x: hidden;
+  overflow-x: visible;
 }
 @font-face {
   font-family: "ChangwonDangamRounded";
@@ -405,7 +405,7 @@ html {
     height: 100px;
     position: absolute;
     top: 20%;
-    right: 10%;
+    right: 0px;
     /* opacity: 0.5; */
     animation: cloud 1.5s ease infinite;
   }
@@ -537,11 +537,11 @@ html {
     right: 44%;
     background-color: #ccd8ff;
     width: 20%;
-    height: 5%;
+    height: 4%;
     font-size: 1.1rem;
     border-radius: 10px;
     text-align: center;
-    line-height: 50px;
+    line-height: 40px;
     font-size: 8px;
   }
   .sian .textbookplan {
@@ -550,11 +550,11 @@ html {
     right: 0%;
     background-color: #ccd8ff;
     width: 20%;
-    height: 5%;
+    height: 4%;
     font-size: 1.1rem;
     border-radius: 10px;
     text-align: center;
-    line-height: 50px;
+    line-height: 40px;
     font-size: 8px;
   }
   .sian .carplan {
@@ -563,11 +563,11 @@ html {
     right: 22%;
     background-color: #ccd8ff;
     width: 20%;
-    height: 5%;
+    height: 4%;
     font-size: 1.1rem;
     border-radius: 10px;
     text-align: center;
-    line-height: 50px;
+    line-height: 40px;
     font-size: 8px;
   }
 
@@ -638,7 +638,7 @@ html {
     gap: 10px;
     position: absolute;
     left: 50%;
-    top: 45%;
+    top: 35%;
     transform: translateX(-50%);
   }
   .downai li {
