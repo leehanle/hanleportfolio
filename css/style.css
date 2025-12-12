@@ -140,7 +140,7 @@ body {
     flex-direction: column;
     text-align: left;
     justify-content: center;
-    padding-left: 30px;
+    /* padding-left: 30px; */
     font-size: 10px;
   }
   .self .profil .left .text h2 {
@@ -273,7 +273,7 @@ body {
     display: flex;
     gap: 20px;
     background-color: rgba(255, 255, 255, 0.5);
-    width: 70%;
+    width: 80%;
     height: 700px;
     margin: 100px auto;
     border-radius: 50px 0px 50px 0px;
@@ -337,6 +337,7 @@ body {
     background-color: #ccd8ff;
     padding: 10px;
     border-radius: 10px;
+    font-size: 10px;
   }
   .coding .downtext .click .right p {
     margin-bottom: 20px;
@@ -354,7 +355,7 @@ body {
     display: flex;
     gap: 20px;
     background-color: rgba(255, 255, 255);
-    width: 70%;
+    width: 80%;
     height: 700px;
     margin: 50px auto;
     border-radius: 50px 0px 50px 0px;
@@ -366,7 +367,7 @@ body {
     display: flex;
     gap: 20px;
     background-color: #e5ebff;
-    width: 70%;
+    width: 80%;
     height: 700px;
     margin: 50px auto;
     border-radius: 50px 0px 50px 0px;
@@ -449,7 +450,7 @@ body {
   .sian h2 {
     color: #6479ff;
     position: absolute;
-    left: 20%;
+    left: 10%;
     top: 5%;
   }
   .sian .sianimg div {
