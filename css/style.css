@@ -17,6 +17,9 @@ body {
   overflow-x: hidden;
   font-family: "ChangwonDangamRounded";
 }
+html {
+  overflow-x: hidden;
+}
 @font-face {
   font-family: "ChangwonDangamRounded";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2511-1@1.0/ChangwonDangamRound-Regular.woff2")
@@ -309,6 +312,9 @@ body {
     color: #000;
     margin-bottom: 50px;
   }
+  .coding .plan {
+    font-size: 10px;
+  }
   .coding .downtext ul {
     display: flex;
     gap: 10px;
@@ -536,7 +542,7 @@ body {
     border-radius: 10px;
     text-align: center;
     line-height: 50px;
-    font-size: 13px;
+    font-size: 8px;
   }
   .sian .textbookplan {
     position: absolute;
@@ -549,7 +555,7 @@ body {
     border-radius: 10px;
     text-align: center;
     line-height: 50px;
-    font-size: 13px;
+    font-size: 8px;
   }
   .sian .carplan {
     position: absolute;
@@ -562,7 +568,7 @@ body {
     border-radius: 10px;
     text-align: center;
     line-height: 50px;
-    font-size: 13px;
+    font-size: 8px;
   }
 
   /*container4
@@ -611,7 +617,7 @@ body {
     gap: 10px;
     position: absolute;
     left: 50%;
-    top: 25%;
+    top: 10%;
     transform: translateX(-50%);
   }
   .upai li {
@@ -675,7 +681,7 @@ body {
     transform: translate(-50%, -50%);
   }
   footer h2 {
-    font-size: 15px;
+    font-size: 10px;
     font-weight: normal;
     margin: 50px 0px;
   }
@@ -697,15 +703,18 @@ body {
     display: flex;
     gap: 10px;
     margin-bottom: 10px;
+    font-size: 10px;
   }
   footer .callbox {
     display: flex;
     gap: 10px;
     margin-bottom: 10px;
+    font-size: 10px;
   }
   footer .instabox {
     display: flex;
     gap: 10px;
+    font-size: 10px;
   }
   footer .all {
     position: absolute;
