@@ -18,7 +18,8 @@ body {
   font-family: "ChangwonDangamRounded";
 }
 html {
-  overflow-x: visible;
+  overflow-x: hidden;
+  overflow-y: auto; /* 꼭 필요! */
 }
 @font-face {
   font-family: "ChangwonDangamRounded";
@@ -37,7 +38,7 @@ html {
     display: flex;
     width: 90%;
     justify-content: space-between;
-    margin: 50px auto;
+    margin: 0px auto;
   }
   #visual ul li div {
     /* border: 1px solid red; */
